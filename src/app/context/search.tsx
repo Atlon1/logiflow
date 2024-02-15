@@ -1,15 +1,16 @@
 'use client'
 
 import {createContext, useContext, useState} from "react";
+import {SearchContextType} from "../../../@types/context";
 
-export const SearchContext = createContext({})
+export const SearchContext = createContext<SearchContextType | null>(null)
 
 
-export const SearchContextProvider = ({children, value} : {children: React.ReactNode, value: unknown}) => {
- const [searchActive, setSearchActive] = useState(false)
+export const SearchContextProvider = ({children}: { children: React.ReactNode }) => {
+    const [searchActive, setSearchActive] = useState(false)
 
     return (
-        <SearchContextProvider value={{searchActive, setSearchActive}}>{children}</SearchContextProvider>
+        <SearchContextProvider>{children}</SearchContextProvider>
     )
 }
 
