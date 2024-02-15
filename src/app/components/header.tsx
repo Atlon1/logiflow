@@ -1,6 +1,6 @@
 "use client"
 
-import {useContext, useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 
 import Image from "next/image";
 
@@ -14,8 +14,9 @@ import {BiMenuAltRight, BiX} from "react-icons/bi";
 
 import {SearchContext} from "@/app/context/search";
 
+
 export const Header = () => {
-    const {searchActive, setSearchActive} = useContext<any>(SearchContext);
+    const {setSearchActive} = useContext<any>(SearchContext);
 
     const [header, setHeader] = useState(false);
     const [nav, setNav] = useState(false);
@@ -30,6 +31,11 @@ export const Header = () => {
                 setHeader(true);
             } else {
                 setHeader(false);
+            }
+            if (window.scrollY>800){
+                setSearchActive(true)
+            } else {
+                setSearchActive(false)
             }
         }
         window.addEventListener('scroll', handleScroll);
