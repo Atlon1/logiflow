@@ -18,6 +18,7 @@ import {SearchContext} from "@/app/context/search";
 export const Header = () => {
     const {setSearchActive} = useContext<any>(SearchContext);
 
+
     const [header, setHeader] = useState(false);
     const [nav, setNav] = useState(false);
 
