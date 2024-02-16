@@ -2,8 +2,8 @@
 export const Testimonial = () => {
 
     return (
-        <div>
+        <section className='section flex items-center' id='testimonials'>
             Testimonial
-        </div>
+        </section>
     )
 }

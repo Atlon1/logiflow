@@ -3,8 +3,8 @@
 export const Why = () => {
 
     return (
-        <div>
+        <section className='section flex items-center' id='why'>
             Why
-        </div>
+        </section>
     )
 }
