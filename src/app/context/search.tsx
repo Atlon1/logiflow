@@ -10,7 +10,6 @@ export const SearchContextProvider = ({children}: { children: React.ReactNode })
     const [searchActive, setSearchActive] = useState(false)
 
 
-
     return (
         <SearchContext.Provider value={{searchActive, setSearchActive}}>
             {children}
