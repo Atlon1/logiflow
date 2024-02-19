@@ -8,12 +8,12 @@ export const SearchMobile = () => {
     return (
         <div className='xl:hidden'>
             <div className='container mx-auto'>
-                <div>
+                <div className='flex flex-col gap-y-4'>
                     <LocationSelection/>
                     <DateSelection/>
                     <HoursSelection/>
-                    <div>
-                        <button>Search</button>
+                    <div className='flex items-center px-6'>
+                        <button className='btn btn-sm btn-accent w-[164px] mx-auto'>Search</button>
                     </div>
                 </div>
             </div>
