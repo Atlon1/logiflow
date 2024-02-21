@@ -41,7 +41,9 @@ export const LocationSelection = () => {
                 -translate-x-1/2 xl:-translate-x-0 text-sm text-center xl:text-left w-full bg-white max-w-[332px] py-6
                 rounded-[10px]'>
                     {locations.map((location, index) => {
-                        return <div key={index}>{location}</div>
+                        return <div
+                            className='cursor-pointer py-4 xl:pl-10 hover:bg-gray-50 text-[13px] uppercase'
+                            key={index}>{location}</div>
                     })}
                 </Menu.Items>
             </div>
