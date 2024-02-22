@@ -4,7 +4,11 @@ import {useState} from "react";
 
 import {Menu} from '@headlessui/react'
 
-import {FaMapMarkerAlt} from "react-icons/fa";
+import {FaCalendarAlt} from "react-icons/fa";
+import {FaArrowRightLong} from "react-icons/fa6";
+
+import {DateRange} from "react-date-range";
+import {format, addDays} from "date-fns";
 
 const locations = [
     'Main Street 123, United States',
@@ -25,7 +29,7 @@ export const DateSelection = () => {
                         className='w-full h-16 xl:h-full flex justify-center xl:justify-start xl:border-r xl:border-black/10'>
                         <div className='flex flex-col justify-center'>
                             <div className='flex flex-col xl:flex-row items-center xl:gap-x-2 gap-y-2 xl:gap-y-0'>
-                                <FaMapMarkerAlt className='text-accent'/>
+                                <FaCalendarAlt className='text-accent'/>
                                 <div className='text-[15px] uppercase font-bold'>
                                     Select location
                                 </div>
