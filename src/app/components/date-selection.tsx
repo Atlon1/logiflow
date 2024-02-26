@@ -13,11 +13,6 @@ import {format, addDays} from "date-fns";
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 
-const locations = [
-    'Main Street 123, United States',
-    'Business Avenue 456, Canada',
-    'Park Road 789, United Kingdom',
-]
 
 export const DateSelection = () => {
 
