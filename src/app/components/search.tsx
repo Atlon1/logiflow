@@ -3,6 +3,7 @@ import {useContext} from "react";
 import {SearchContext} from "@/app/context/search";
 import {LocationSelection} from "@/app/components/location-selection";
 import {DateSelection} from "@/app/components/date-selection";
+import {HoursSelection} from "@/app/components/hours-selection";
 
 export const Search = () => {
 
@@ -14,6 +15,7 @@ export const Search = () => {
             <div className='xl:h-full flex items-center px-6 xl:px-0'>
                 <LocationSelection/>
                 <DateSelection/>
+                <HoursSelection/>
             </div>
         </div>
     )

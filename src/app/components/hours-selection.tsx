@@ -5,13 +5,19 @@ import {useState} from "react";
 import {Menu} from '@headlessui/react'
 
 import {FaClock} from "react-icons/fa";
+import {FaArrowRightLong} from "react-icons/fa6";
 
-
+const hours = [
+    '10:00 AM',
+    '12:00 AM',
+    '14:00 AM',
+    '16:00 AM',
+]
 
 export const HoursSelection = () => {
 
-    const [location, setLocation] = useState('Select Location');
 
+    const [hours, setHours] = useState('10:00 AM');
     return (
         <Menu as="div" className="w-full h-full flex xl:flex-row">
             <div className='relative flex-1'>
@@ -26,9 +32,16 @@ export const HoursSelection = () => {
                                     Select hours
                                 </div>
                             </div>
-                            <div
-                                className='uppercase font-medium text-[13px] text-secondary text-center xl:ml-6 xl:text-left'>
-                                hours
+                            <div className='flex items-center justify-center gap-x-3'>
+                                <div
+                                    className='font-medium text-[13px] text-secondary xl:ml-6'>
+                                    {hours}
+                                </div>
+                                <FaArrowRightLong className='text-accent text-[12px]'/>
+                                <div
+                                    className='font-medium text-[13px] text-secondary '>
+                                    {hours}
+                                </div>
                             </div>
                         </div>
                     </div>
