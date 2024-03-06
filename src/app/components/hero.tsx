@@ -15,7 +15,11 @@ export const Hero = () => {
         <section className="h-screen xl:h-[90vh] bg-[#b2b7c2]/10" id='home'>
             <div className='container mx-auto h-full xl:pt-10'>
                 <div className='flex flex-col xl:flex-row justify-center items-center xl:justify-start h-full'>
-                    <div>text</div>
+                    <div className='text-center xl:max-w-xl xl:text-left'>
+                        <h1 className='h1'>
+                            Explore the Finest <span className='text-accent'>Global</span> Offers {''}
+                        </h1>
+                    </div>
                     <div>image</div>
                 </div>
             </div>
