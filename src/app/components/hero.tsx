@@ -76,13 +76,24 @@ export const Hero = () => {
                 </div>
             </div>
             {searchActive ? (
-                <div className='fixed top-[80px] z-10 w-full max-w-[1920px]'>
+                <motion.div
+                    initial={{y: '-100%'}}
+                    animate={{y: 0}}
+                    transition={{ease: easeInOut}}
+                    className='fixed top-[80px] z-10 w-full max-w-[1920px]'>
                     <Search/>
-                </div>
+                </motion.div>
             ) : (
                 <div className='-mt-12 w-full max-w-[1300px] mx-auto'>
-                    <Search/>
+                    <motion.div
+                        variants={fadeIn('up', 0.8)}
+                        initial='hidden'
+                        whileInView={'show'}
+                        viewport={{once: false, amount: 0.2}}>
+                        <Search/>
+                    </motion.div>
                 </div>
+
             )}
         </section>
     )
