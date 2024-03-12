@@ -8,6 +8,10 @@ import {Search} from "@/app/components/search";
 import {SearchContext} from "@/app/context/search";
 import Image from "next/image";
 
+import {motion, easeInOut} from "framer-motion";
+
+import {fadeIn} from "../../../variants";
+
 export const Hero = () => {
 
     const {searchActive} = useContext<any>(SearchContext)
@@ -17,13 +21,28 @@ export const Hero = () => {
             <div className='container mx-auto h-full xl:pt-10'>
                 <div className='flex flex-col xl:flex-row justify-center items-center xl:justify-start h-full'>
                     <div className='text-center xl:max-w-xl xl:text-left mt-16 xl:mt-0'>
-                        <h1 className='h1'>
+                        <motion.h1
+                            variants={fadeIn({delay: 0.2, direction: 'down'})}
+                            initial='hidden'
+                            whileInView='show'
+                            viewport={{once: false, amount: 0.6}}
+                            className='h1'>
                             Explore the Finest <span className='text-accent'>Global</span> Offers {''}
-                        </h1>
-                        <p className='description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10'>
+                        </motion.h1>
+                        <motion.p
+                            variants={fadeIn({delay: 0.4, direction: 'down'})}
+                            initial='hidden'
+                            whileInView='show'
+                            viewport={{once: false, amount: 0.6}}
+                            className='description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10'>
                             Find your ideal ride for any adventure with our comprehensive list of car rentals.
-                        </p>
-                        <div className='flex gap-x-3 justify-center xl:mt-0'>
+                        </motion.p>
+                        <motion.div
+                            variants={fadeIn({delay: 0.6, direction: 'down'})}
+                            initial='hidden'
+                            whileInView='show'
+                            viewport={{once: false, amount: 0.8}}
+                            className='flex gap-x-3 justify-center xl:mt-0'>
                             <button className='btn-cta'>
                                 <Image src={'/icons/buttons/app-store.svg'}
                                        alt='google-play'
@@ -38,7 +57,7 @@ export const Hero = () => {
                                        height={36}
                                 />
                             </button>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className='relative w-full h-full max-h-[50vh] md:max-w-[90vw] xl:max-w-[860px]
                     xl:max-h-[542px] xl:absolute xl:-right-[100px] min-[1680px] :right-[120px] xl:top-48'>
