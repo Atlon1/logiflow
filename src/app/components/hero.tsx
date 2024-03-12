@@ -40,7 +40,15 @@ export const Hero = () => {
                             </button>
                         </div>
                     </div>
-                    <div>image</div>
+                    <div className='relative w-full h-full max-h-[50vh] md:max-w-[90vw] xl:max-w-[860px]
+                    xl:max-h-[542px] xl:absolute xl:-right-[100px] min-[1680px] :right-[120px] xl:top-48'>
+                        <Image src={'/images/hero/car.svg'}
+                               alt='hero'
+                               fill
+                               style={{objectFit: 'contain'}}
+                               priority
+                        />
+                    </div>
                 </div>
             </div>
             {searchActive ? (
