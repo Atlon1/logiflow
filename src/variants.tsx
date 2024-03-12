@@ -1,9 +1,5 @@
-type Variant = {
-    direction: string,
-    delay: number
-}
 
-export const fadeIn = ({direction = 'up', delay = 0.2}: Variant) => {
+export const fadeIn = (direction : string, delay : number) => {
 
     return {
         hidden: {

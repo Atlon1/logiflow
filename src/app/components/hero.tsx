@@ -10,7 +10,7 @@ import Image from "next/image";
 
 import {motion, easeInOut} from "framer-motion";
 
-import {fadeIn} from "../../../variants";
+import {fadeIn} from "../../variants";
 
 export const Hero = () => {
 
@@ -22,25 +22,25 @@ export const Hero = () => {
                 <div className='flex flex-col xl:flex-row justify-center items-center xl:justify-start h-full'>
                     <div className='text-center xl:max-w-xl xl:text-left mt-16 xl:mt-0'>
                         <motion.h1
-                            variants={fadeIn({delay: 0.2, direction: 'down'})}
+                            variants={fadeIn('down', 0.2)}
                             initial='hidden'
-                            whileInView='show'
+                            whileInView={'show'}
                             viewport={{once: false, amount: 0.6}}
                             className='h1'>
                             Explore the Finest <span className='text-accent'>Global</span> Offers {''}
                         </motion.h1>
                         <motion.p
-                            variants={fadeIn({delay: 0.4, direction: 'down'})}
+                            variants={fadeIn('down', 0.4)}
                             initial='hidden'
-                            whileInView='show'
+                            whileInView={'show'}
                             viewport={{once: false, amount: 0.6}}
                             className='description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10'>
                             Find your ideal ride for any adventure with our comprehensive list of car rentals.
                         </motion.p>
                         <motion.div
-                            variants={fadeIn({delay: 0.6, direction: 'down'})}
+                            variants={fadeIn('down', 0.6)}
                             initial='hidden'
-                            whileInView='show'
+                            whileInView={'show'}
                             viewport={{once: false, amount: 0.8}}
                             className='flex gap-x-3 justify-center xl:mt-0'>
                             <button className='btn-cta'>
@@ -59,7 +59,12 @@ export const Hero = () => {
                             </button>
                         </motion.div>
                     </div>
-                    <div className='relative w-full h-full max-h-[50vh] md:max-w-[90vw] xl:max-w-[860px]
+                    <motion.div
+                        variants={fadeIn('up', 0.6)}
+                        initial='hidden'
+                        whileInView={'show'}
+                        viewport={{once: false, amount: 0.8}}
+                        className='relative w-full h-full max-h-[50vh] md:max-w-[90vw] xl:max-w-[860px]
                     xl:max-h-[542px] xl:absolute xl:-right-[100px] min-[1680px] :right-[120px] xl:top-48'>
                         <Image src={'/images/hero/car.svg'}
                                alt='hero'
@@ -67,7 +72,7 @@ export const Hero = () => {
                                style={{objectFit: 'contain'}}
                                priority
                         />
-                    </div>
+                    </motion.div>
                 </div>
             </div>
             {searchActive ? (
