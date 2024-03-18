@@ -10,7 +10,7 @@ import Image from "next/image";
 
 import {motion, easeInOut} from "framer-motion";
 
-import {fadeIn} from "../../variants";
+import {fadeIn} from "../../../variants";
 
 export const Hero = () => {
 
