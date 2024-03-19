@@ -1,4 +1,7 @@
-import 'swiper/css'
+"use client"
+
+import {Swiper, SwiperSlide} from "swiper/react";
+import 'swiper/css';
 import Image from "next/image";
 import {FaStar, FaStarHalfAlt, FaRegStar} from "react-icons/fa";
 import {motion} from "framer-motion";
@@ -122,8 +125,32 @@ const cars = [
 export const CarSlider = () => {
 
     return (
-        <div>
-            <h1>Car Slider</h1>
+        <div className='container mx-auto'>
+            <Swiper breakpoints={{
+                320: {slidesPerView: 1, spaceBetween: 15},
+                640: {slidesPerView: 2, spaceBetween: 32},
+                1260: {slidesPerView: 3, spaceBetween: 32},
+            }}>
+                {cars.map((car, index) => {
+                    return (
+                        <SwiperSlide key={index}>
+                            <div className='max-w-[385px] mx-auto sm:mx-0 bg-gray-100'>
+                                <Image src={car.image}
+                                       width={380}
+                                       height={284}
+                                       alt="car-image"/>
+                                <div>
+                                    <div>
+                                        <div>{car.type}</div>
+                                        <h3>{car.name}</h3>
+                                        <h3>{car.price}</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    )
+                })}
+            </Swiper>
         </div>
     )
 }
