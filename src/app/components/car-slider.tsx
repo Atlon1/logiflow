@@ -33,12 +33,13 @@ const cars = [
                 icon: 'icons/carSlider/wheel.svg',
                 text: 'Front'
             }]
-    }, {
+    },
+    {
         type: 'Sedan',
-        name: 'Ford Focus',
-        price: 29,
-        stars: 3.5,
-        image: 'images/carSlider/car01.svg',
+        name: 'Toyota Corolla',
+        price: 25,
+        stars: 5,
+        image: 'images/carSlider/car02.svg',
         info: [
             {
                 icon: 'icons/carSlider/gearshift.svg',
@@ -60,16 +61,17 @@ const cars = [
                 icon: 'icons/carSlider/wheel.svg',
                 text: 'Front'
             }]
-    }, {
-        type: 'Hatchback',
-        name: 'Ford Focus',
+    },
+    {
+        type: 'SUV',
+        name: 'Honda CR-V',
         price: 29,
         stars: 3.5,
-        image: 'images/carSlider/car01.svg',
+        image: 'images/carSlider/car03.svg',
         info: [
             {
                 icon: 'icons/carSlider/gearshift.svg',
-                text: 'Manual'
+                text: 'Automatic'
             },
             {
                 icon: 'icons/carSlider/seat.svg',
@@ -87,12 +89,13 @@ const cars = [
                 icon: 'icons/carSlider/wheel.svg',
                 text: 'Front'
             }]
-    }, {
-        type: 'Hatchback',
-        name: 'Ford Focus',
-        price: 29,
-        stars: 3.5,
-        image: 'images/carSlider/car01.svg',
+    },
+    {
+        type: 'Convertible',
+        name: 'Mazda MX-5',
+        price: 32,
+        stars: 4.9,
+        image: 'images/carSlider/car02.svg',
         info: [
             {
                 icon: 'icons/carSlider/gearshift.svg',
