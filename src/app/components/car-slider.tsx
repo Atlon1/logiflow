@@ -145,6 +145,25 @@ export const CarSlider = () => {
                                         <h3>{car.name}</h3>
                                         <h3>{car.price}</h3>
                                     </div>
+                                    <div>
+                                        stars
+                                    </div>
+                                </div>
+                                <div className='flex gap-x-3'>
+                                    {car.info.map((item, index) => {
+                                        return <div className='flex flex-col items-center' key={index}>
+                                            <div className='bg-primary w-12 h-12 rounded-full flex justify-center items-center'>
+                                                <Image
+                                                    src={item.icon}
+                                                    width={24}
+                                                    height={24}
+                                                    alt="item icon"/>
+                                            </div>
+                                            <div className='text-[12px] uppercase'>
+                                                {item.text}
+                                            </div>
+                                        </div>
+                                    })}
                                 </div>
                             </div>
                         </SwiperSlide>
