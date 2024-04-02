@@ -125,7 +125,12 @@ const cars = [
 export const CarSlider = () => {
 
     return (
-        <div className='container mx-auto'>
+        <motion.div
+            variants={fadeIn('up',0.4)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{once: false, amount: 0.2}}
+            className='container mx-auto'>
             <Swiper breakpoints={{
                 320: {slidesPerView: 1, spaceBetween: 15},
                 640: {slidesPerView: 2, spaceBetween: 32},
@@ -134,7 +139,7 @@ export const CarSlider = () => {
                 {cars.map((car, index) => {
                     return (
                         <SwiperSlide key={index}>
-                            <div className='max-w-[385px] mx-auto sm:mx-0 bg-gray-100'>
+                            <div className='max-w-[385px] mx-auto sm:mx-0'>
                                 <Image src={car.image}
                                        width={380}
                                        height={284}
@@ -145,8 +150,12 @@ export const CarSlider = () => {
                                         <h3 className='text-lg uppercase font-bold'>{car.name}</h3>
                                         <h3 className='mb-10 text-accent font-semibold uppercase'>{car.price}/day</h3>
                                     </div>
-                                    <div>
-                                        stars
+                                    <div className='flex gap-x-2 text-accent h-max'>
+                                        <FaStar/>
+                                        <FaStar/>
+                                        <FaStar/>
+                                        <FaStar/>
+                                        <FaStar/>
                                     </div>
                                 </div>
                                 <div className='flex gap-x-3'>
@@ -170,6 +179,6 @@ export const CarSlider = () => {
                     )
                 })}
             </Swiper>
-        </div>
+        </motion.div>
     )
 }
