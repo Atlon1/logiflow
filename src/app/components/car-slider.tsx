@@ -139,11 +139,11 @@ export const CarSlider = () => {
                                        width={380}
                                        height={284}
                                        alt="car-image"/>
-                                <div>
+                                <div className='flex justify-between'>
                                     <div>
-                                        <div>{car.type}</div>
-                                        <h3>{car.name}</h3>
-                                        <h3>{car.price}</h3>
+                                        <div className='text-secondary upppercase'>{car.type}</div>
+                                        <h3 className='text-lg uppercase font-bold'>{car.name}</h3>
+                                        <h3 className='mb-10 text-accent font-semibold uppercase'>{car.price}/day</h3>
                                     </div>
                                     <div>
                                         stars
@@ -152,7 +152,7 @@ export const CarSlider = () => {
                                 <div className='flex gap-x-3'>
                                     {car.info.map((item, index) => {
                                         return <div className='flex flex-col items-center' key={index}>
-                                            <div className='bg-primary w-12 h-12 rounded-full flex justify-center items-center'>
+                                            <div className='bg-primary w-12 h-12 rounded-full flex justify-center items-center mb-2'>
                                                 <Image
                                                     src={item.icon}
                                                     width={24}
