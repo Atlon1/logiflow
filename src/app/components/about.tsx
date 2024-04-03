@@ -9,8 +9,15 @@ import {fadeIn} from "../../../variants";
 
 
 export const About = () => {
+    const [ref, inView] = useInView({
+        threshold: 0.5,
+    })
     return (
-        <section className='section flex items-center bg-pink-200' id='about'>
+        <section
+            className='section flex items-center bg-pink-200'
+            id='about'
+            ref={ref}
+        >
             About
         </section>
     )
