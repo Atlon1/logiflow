@@ -14,11 +14,25 @@ export const About = () => {
     })
     return (
         <section
-            className='section flex items-center bg-pink-200'
+            className='section flex items-center'
             id='about'
             ref={ref}
         >
-            About
+            <div className='container mx-auto'>
+                <div className='flex flex-col xl:flex-row xl:justify-between'>
+                    <div>
+                        <Image
+                            className='rounded-[20px]'
+                            src={'/images/about/car01.png'}
+                            alt='about'
+                            width={600}
+                            height={448}
+                        />
+                    </div>
+
+                    <div>text & stats</div>
+                </div>
+            </div>
         </section>
     )
 }
