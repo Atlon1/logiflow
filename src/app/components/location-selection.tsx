@@ -14,7 +14,7 @@ const locations = [
 
 export const LocationSelection = () => {
 
-    const [location, setLocation] = useState('Select Location');
+    const [location, setLocation] = useState('Wybierz lokalizację');
 
     return (
         <Menu as="div" className="w-full h-full flex xl:flex-row">
@@ -27,7 +27,7 @@ export const LocationSelection = () => {
                             <div className='flex flex-col xl:flex-row items-center xl:gap-x-2 gap-y-2 xl:gap-y-0'>
                                 <FaMapMarkerAlt className='text-accent'/>
                                 <div className='text-[15px] uppercase font-bold'>
-                                    Select location
+                                    Wybierz lokalizację
                                 </div>
                             </div>
                             <div

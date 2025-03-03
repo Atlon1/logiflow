@@ -19,8 +19,8 @@ export const Hero = () => {
     return (
         <section className="h-[80vh] lg:h-[912px] bg-hero bg-cover bg-center bg-no-repeat" id='home'>
             <div className='container mx-auto h-full xl:pt-10'>
-                <div className='flex flex-col xl:flex-row justify-center items-center xl:justify-start h-full'>
-                    <div className='text-center xl:max-w-xl xl:text-left mt-16 xl:mt-0'>
+                <div className='flex flex-row justify-center items-end h-full'>
+                    <div className='text-center xl:pb-10'>
                         <motion.h1
                             variants={fadeIn('down', 0.2)}
                             initial='hidden'
@@ -34,25 +34,11 @@ export const Hero = () => {
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{once: false, amount: 0.6}}
-                            className='description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10'>
+                            className='description mx-auto xl:mx-0 mb-6 xl:mb-10'>
                             Znajdź najlepsza lokalizacje magazynową dla siebie.
                         </motion.p>
 
                     </div>
-                    {/*<motion.div*/}
-                    {/*    variants={fadeIn('up', 0.6)}*/}
-                    {/*    initial='hidden'*/}
-                    {/*    whileInView={'show'}*/}
-                    {/*    viewport={{once: false, amount: 0.8}}*/}
-                    {/*    className='relative w-full h-full max-h-[50vh] md:max-w-[90vw] xl:max-w-[860px]*/}
-                    {/*xl:max-h-[542px] xl:absolute xl:-right-[100px] min-[1680px] :right-[120px] xl:top-48'>*/}
-                    {/*    <Image src={'/images/hero/car.svg'}*/}
-                    {/*           alt='hero'*/}
-                    {/*           fill*/}
-                    {/*           style={{objectFit: 'contain'}}*/}
-                    {/*           priority*/}
-                    {/*    />*/}
-                    {/*</motion.div>*/}
                 </div>
             </div>
             {searchActive ? (

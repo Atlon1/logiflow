@@ -1,6 +1,6 @@
 import {Header} from './components/header';
 import {Hero} from "@/app/components/hero";
-import {Cars} from "@/app/components/cars";
+import {Magazine} from "@/app/components/magazine";
 import {About} from "@/app/components/about";
 import {Why} from "@/app/components/why";
 import {Testimonial} from "@/app/components/testimonial";
@@ -14,7 +14,7 @@ export default function Home() {
         <main className="max-w-[1920px] bg-white mx-auto relative overflow-hidden">
             <Header/>
             <Hero/>
-            <Cars/>
+            <Magazine/>
             <About/>
             <Why/>
             <Testimonial/>

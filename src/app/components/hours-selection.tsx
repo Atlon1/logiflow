@@ -29,7 +29,7 @@ export const HoursSelection = () => {
                             <div className='flex flex-col xl:flex-row items-center xl:gap-x-2 gap-y-2 xl:gap-y-0'>
                                 <FaClock className='text-accent'/>
                                 <div className='text-[15px] uppercase font-bold'>
-                                    Select hours
+                                    Wybierz godzine
                                 </div>
                             </div>
                             <div className='flex items-center justify-center gap-x-3'>

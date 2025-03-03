@@ -10,114 +10,142 @@ import {fadeIn} from "../../../variants";
 
 const cars = [
     {
-        type: 'Hatchback',
-        name: 'Ford Focus',
+        type: 'Magazyn Poznan',
+        name: 'Nazwa Firmy',
         price: 29,
         stars: 3.5,
-        image: 'images/carSlider/car01.svg',
+        image: '/images/magSlider/m1.jpg',
         info: [
             {
-                icon: 'icons/carSlider/gearshift.svg',
+                icon: 'icons/magSlider/gearshift.svg',
                 text: 'Manual'
             },
             {
-                icon: 'icons/carSlider/seat.svg',
+                icon: 'icons/magSlider/seat.svg',
                 text: '5 seats'
             },
             {
-                icon: 'icons/carSlider/gas.svg',
+                icon: 'icons/magSlider/gas.svg',
                 text: 'Gas'
             },
             {
-                icon: 'icons/carSlider/engine.svg',
+                icon: 'icons/magSlider/engine.svg',
                 text: '1600 Hp'
             },
             {
-                icon: 'icons/carSlider/wheel.svg',
+                icon: 'icons/magSlider/wheel.svg',
                 text: 'Front'
             }]
     },
     {
-        type: 'Sedan',
-        name: 'Toyota Corolla',
+        type: 'Magazyn Wronki',
+        name: 'Nazwa Firmy',
         price: 25,
         stars: 5,
-        image: 'images/carSlider/car02.svg',
+        image: '/images/magSlider/m2.jpg',
         info: [
             {
-                icon: 'icons/carSlider/gearshift.svg',
+                icon: 'icons/magSlider/gearshift.svg',
                 text: 'Manual'
             },
             {
-                icon: 'icons/carSlider/seat.svg',
+                icon: 'icons/magSlider/seat.svg',
                 text: '5 seats'
             },
             {
-                icon: 'icons/carSlider/gas.svg',
+                icon: 'icons/magSlider/gas.svg',
                 text: 'Gas'
             },
             {
-                icon: 'icons/carSlider/engine.svg',
+                icon: 'icons/magSlider/engine.svg',
                 text: '1600 Hp'
             },
             {
-                icon: 'icons/carSlider/wheel.svg',
+                icon: 'icons/magSlider/wheel.svg',
                 text: 'Front'
             }]
     },
     {
-        type: 'SUV',
-        name: 'Honda CR-V',
+        type: 'Magazyn Warszawa',
+        name: 'Nazwa Firmy',
         price: 29,
         stars: 3.5,
-        image: 'images/carSlider/car03.svg',
+        image: '/images/magSlider/m3.jpg',
         info: [
             {
-                icon: 'icons/carSlider/gearshift.svg',
+                icon: 'icons/magSlider/gearshift.svg',
                 text: 'Automatic'
             },
             {
-                icon: 'icons/carSlider/seat.svg',
+                icon: 'icons/magSlider/seat.svg',
                 text: '5 seats'
             },
             {
-                icon: 'icons/carSlider/gas.svg',
+                icon: 'icons/magSlider/gas.svg',
                 text: 'Gas'
             },
             {
-                icon: 'icons/carSlider/engine.svg',
+                icon: 'icons/magSlider/engine.svg',
                 text: '1600 Hp'
             },
             {
-                icon: 'icons/carSlider/wheel.svg',
+                icon: 'icons/magSlider/wheel.svg',
                 text: 'Front'
             }]
     },
     {
-        type: 'Convertible',
-        name: 'Mazda MX-5',
+        type: 'Magazyn Gdańśk',
+        name: 'Nazwa Firmy',
         price: 32,
         stars: 4.9,
-        image: 'images/carSlider/car02.svg',
+        image: '/images/magSlider/m4.jpg',
         info: [
             {
-                icon: 'icons/carSlider/gearshift.svg',
+                icon: 'icons/magSlider/gearshift.svg',
                 text: 'Manual'
             },
             {
-                icon: 'icons/carSlider/seat.svg',
+                icon: 'icons/magSlider/seat.svg',
                 text: '5 seats'
             },
             {
-                icon: 'icons/carSlider/gas.svg',
+                icon: 'icons/magSlider/gas.svg',
                 text: 'Gas'
             },
             {
-                icon: 'icons/carSlider/engine.svg',
+                icon: 'icons/magSlider/engine.svg',
                 text: '1600 Hp'
             },
             {
-                icon: 'icons/carSlider/wheel.svg',
+                icon: 'icons/magSlider/wheel.svg',
+                text: 'Front'
+            }]
+    },
+    {
+        type: 'Magazyn Szczeciń',
+        name: 'Nazwa Firmy',
+        price: 32,
+        stars: 4.9,
+        image: '/images/magSlider/m5.jpg',
+        info: [
+            {
+                icon: 'icons/magSlider/gearshift.svg',
+                text: 'Manual'
+            },
+            {
+                icon: 'icons/magSlider/seat.svg',
+                text: '5 seats'
+            },
+            {
+                icon: 'icons/magSlider/gas.svg',
+                text: 'Gas'
+            },
+            {
+                icon: 'icons/magSlider/engine.svg',
+                text: '1600 Hp'
+            },
+            {
+                icon: 'icons/magSlider/wheel.svg',
                 text: 'Front'
             }]
     },]
@@ -139,7 +167,7 @@ export const CarSlider = () => {
                 {cars.map((car, index) => {
                     return (
                         <SwiperSlide key={index}>
-                            <div className='max-w-[385px] mx-auto sm:mx-0'>
+                            <div className='max-w-[385px] max-h-[600px] h-full mx-auto sm:mx-0'>
                                 <Image src={car.image}
                                        width={380}
                                        height={284}

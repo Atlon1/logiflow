@@ -24,7 +24,7 @@ const config: Config = {
         secondary: '#667085',
         accent: {
           DEFAULT: 'rgb(20 116 135)',
-          hover: '#dd242a'
+          hover: 'rgb(104 178 213)'
         },
         body: '#dedede',
       },
