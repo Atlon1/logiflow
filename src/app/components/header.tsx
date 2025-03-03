@@ -33,7 +33,7 @@ export const Header = () => {
             } else {
                 setHeader(false);
             }
-            if (window.scrollY>800){
+            if (window.scrollY > 800) {
                 setSearchActive(true)
             } else {
                 setSearchActive(false)
@@ -80,7 +80,7 @@ export const Header = () => {
                         activeClass='active'
                         spy={true}
                         smooth={desktopMode}
-                    >Home
+                    >Strona główna
                     </Link>
                     <Link
                         className='cursor-pointer'
@@ -88,7 +88,7 @@ export const Header = () => {
                         activeClass='active'
                         spy={true}
                         smooth={desktopMode}
-                    >Cars
+                    >Magazyny
                     </Link>
                     <Link
                         className='cursor-pointer'
@@ -96,7 +96,7 @@ export const Header = () => {
                         activeClass='active'
                         spy={true}
                         smooth={desktopMode}
-                    >About
+                    >O nas
                     </Link>
                     <Link
                         className='cursor-pointer'
@@ -104,7 +104,7 @@ export const Header = () => {
                         activeClass='active'
                         spy={true}
                         smooth={desktopMode}
-                    >Why us
+                    >Dlaczego my?
                     </Link>
                     <Link
                         className='cursor-pointer'
@@ -112,7 +112,7 @@ export const Header = () => {
                         activeClass='active'
                         spy={true}
                         smooth={desktopMode}
-                    >Testimonials
+                    >Opinie
                     </Link>
                     <Link
                         className='cursor-pointer'
@@ -120,7 +120,7 @@ export const Header = () => {
                         activeClass='active'
                         spy={true}
                         smooth={desktopMode}
-                    >Contact
+                    >Kontakt
                     </Link>
                     <Link
                         className='xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto'
@@ -128,7 +128,7 @@ export const Header = () => {
                         activeClass='active'
                         spy={true}
                         smooth={desktopMode}
-                    >See all cars
+                    >Zobacz nasze magazyny
                     </Link>
                     <SearchMobile/>
                 </nav>
