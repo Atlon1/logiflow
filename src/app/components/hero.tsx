@@ -17,7 +17,7 @@ export const Hero = () => {
     const {searchActive} = useContext<any>(SearchContext)
 
     return (
-        <section className="h-screen xl:h-[90vh] bg-[#b2b7c2]/10" id='home'>
+        <section className="h-[80vh] lg:h-[912px] bg-hero bg-cover bg-center bg-no-repeat" id='home'>
             <div className='container mx-auto h-full xl:pt-10'>
                 <div className='flex flex-col xl:flex-row justify-center items-center xl:justify-start h-full'>
                     <div className='text-center xl:max-w-xl xl:text-left mt-16 xl:mt-0'>
@@ -27,7 +27,7 @@ export const Hero = () => {
                             whileInView={'show'}
                             viewport={{once: false, amount: 0.6}}
                             className='h1'>
-                            Explore the Finest <span className='text-accent'>Global</span> Offers {''}
+                            Znajdź najlepszą <span className='text-accent'>Przestrzeń</span> dla siebie! {''}
                         </motion.h1>
                         <motion.p
                             variants={fadeIn('down', 0.4)}
@@ -35,44 +35,24 @@ export const Hero = () => {
                             whileInView={'show'}
                             viewport={{once: false, amount: 0.6}}
                             className='description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10'>
-                            Find your ideal ride for any adventure with our comprehensive list of car rentals.
+                            Znajdź najlepsza lokalizacje magazynową dla siebie.
                         </motion.p>
-                        <motion.div
-                            variants={fadeIn('down', 0.6)}
-                            initial='hidden'
-                            whileInView={'show'}
-                            viewport={{once: false, amount: 0.8}}
-                            className='flex gap-x-3 justify-center xl:mt-0'>
-                            <button className='btn-cta'>
-                                <Image src={'/icons/buttons/app-store.svg'}
-                                       alt='google-play'
-                                       width={132}
-                                       height={36}
-                                />
-                            </button>
-                            <button className='btn-cta'>
-                                <Image src={'/icons/buttons/google-play.svg'}
-                                       alt='google-play'
-                                       width={132}
-                                       height={36}
-                                />
-                            </button>
-                        </motion.div>
+
                     </div>
-                    <motion.div
-                        variants={fadeIn('up', 0.6)}
-                        initial='hidden'
-                        whileInView={'show'}
-                        viewport={{once: false, amount: 0.8}}
-                        className='relative w-full h-full max-h-[50vh] md:max-w-[90vw] xl:max-w-[860px]
-                    xl:max-h-[542px] xl:absolute xl:-right-[100px] min-[1680px] :right-[120px] xl:top-48'>
-                        <Image src={'/images/hero/car.svg'}
-                               alt='hero'
-                               fill
-                               style={{objectFit: 'contain'}}
-                               priority
-                        />
-                    </motion.div>
+                    {/*<motion.div*/}
+                    {/*    variants={fadeIn('up', 0.6)}*/}
+                    {/*    initial='hidden'*/}
+                    {/*    whileInView={'show'}*/}
+                    {/*    viewport={{once: false, amount: 0.8}}*/}
+                    {/*    className='relative w-full h-full max-h-[50vh] md:max-w-[90vw] xl:max-w-[860px]*/}
+                    {/*xl:max-h-[542px] xl:absolute xl:-right-[100px] min-[1680px] :right-[120px] xl:top-48'>*/}
+                    {/*    <Image src={'/images/hero/car.svg'}*/}
+                    {/*           alt='hero'*/}
+                    {/*           fill*/}
+                    {/*           style={{objectFit: 'contain'}}*/}
+                    {/*           priority*/}
+                    {/*    />*/}
+                    {/*</motion.div>*/}
                 </div>
             </div>
             {searchActive ? (
