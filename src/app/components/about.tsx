@@ -28,7 +28,7 @@ export const About = () => {
                         className='flex-1 mb-8 xl:mb-0'>
                         <Image
                             className='rounded-[20px]'
-                            src={'/images/about/car01.png'}
+                            src={'/images/about/m1.jpg'}
                             alt='about'
                             width={600}
                             height={448}
@@ -42,7 +42,7 @@ export const About = () => {
                                 whileInView={'show'}
                                 viewport={{once: false, amount: 0.2}}
                                 className='h2'>
-                                Car services simplifiad.
+                                Magazyny dostępne od zaraz!
                             </motion.h2>
                             <motion.p
                                 variants={fadeIn('up',0.6)}
@@ -50,8 +50,7 @@ export const About = () => {
                                 whileInView={'show'}
                                 viewport={{once: false, amount: 0.2}}
                                 className='mb-[42px] max-w-md'>
-                                Rent, choose, and repair with ease. Our convenient locations, diverse car types, and
-                                reliable repair ensure a seamless car experience.
+                                Znajdź najlepsza lokalizacje magazynową dla siebie. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </motion.p>
                             <motion.div
                                 variants={fadeIn('up',0.8)}
@@ -66,7 +65,7 @@ export const About = () => {
                                         +
                                     </div>
                                     <div className='uppercase text-[13px] font-semibold text-secondary'>
-                                        Car <br/> Types
+                                        Rodzaje <br/> Magazynów
                                     </div>
                                 </div>
                                 <div className='flex flex-col w-[100px]'>
@@ -76,7 +75,7 @@ export const About = () => {
                                         +
                                     </div>
                                     <div className='uppercase text-[13px] font-semibold text-secondary'>
-                                        rental <br/> outlets
+                                        Dostępne <br/> magazyny
                                     </div>
                                 </div>
                                 <div className='flex flex-col w-[100px]'>
@@ -86,7 +85,7 @@ export const About = () => {
                                         +
                                     </div>
                                     <div className='uppercase text-[13px] font-semibold text-secondary'>
-                                        repair <br/> points
+                                        Punktów <br/> Kontaktu
                                     </div>
                                 </div>
                             </motion.div>
@@ -95,8 +94,8 @@ export const About = () => {
                                 initial='hidden'
                                 whileInView={'show'}
                                 viewport={{once: false, amount: 0.2}}
-                                className='hidden xl:block bg-accent hover:bg-accent-hover rounded-[10px] w-full h-16 uppercase font-medium text-white tracking-[2px] text-[13px] max-w-[184px]'>See
-                                all cars
+                                className='hidden xl:block bg-accent hover:bg-accent-hover rounded-[10px] w-full h-16 uppercase font-medium text-white tracking-[2px] text-[13px] max-w-[184px]'>
+                                Zobacz wszystkie magazyny
                             </motion.button>
                         </div>
                     </div>
